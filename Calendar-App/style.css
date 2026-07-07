@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    background:linear-gradient(135deg,#0f172a,#1e3a8a,#0f172a);
+}
+
+.calendar{
+    width:420px;
+    background:rgba(255,255,255,.1);
+    backdrop-filter:blur(15px);
+    border:1px solid rgba(255,255,255,.2);
+    border-radius:20px;
+    padding:20px;
+    box-shadow:0 0 30px rgba(0,212,255,.4);
+}
+
+.header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:20px;
+}
+
+.header h2{
+    color:#fff;
+    font-size:28px;
+}
+
+.header button{
+    width:45px;
+    height:45px;
+    border:none;
+    border-radius:50%;
+    background:#00d4ff;
+    color:#08121d;
+    font-size:22px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.header button:hover{
+    transform:scale(1.1);
+    box-shadow:0 0 15px #00d4ff;
+}
+
+.weekdays,
+.days{
+    display:grid;
+    grid-template-columns:repeat(7,1fr);
+    gap:8px;
+}
+
+.weekdays div{
+    text-align:center;
+    color:#00d4ff;
+    font-weight:bold;
+    padding:10px 0;
+}
+
+.days div{
+    height:50px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border-radius:10px;
+    color:white;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.days div:hover{
+    background:#00d4ff;
+    color:#08121d;
+}
+
+.today{
+    background:#00d4ff;
+    color:#08121d !important;
+    font-weight:bold;
+    box-shadow:0 0 15px #00d4ff;
+}
+
+@media(max-width:500px){
+
+.calendar{
+    width:95%;
+}
+
+.header h2{
+    font-size:22px;
+}
+
+.days div{
+    height:42px;
+}
+
+}
