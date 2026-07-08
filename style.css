@@ -700,9 +700,10 @@ body{
 @media screen and (max-width:768px){
 
     .navbar{
-        padding:15px 5%;
-        flex-direction:column;
-        gap:15px;
+    padding:15px 20px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
     }
 
     .logo{
@@ -710,10 +711,10 @@ body{
     }
 
     .nav-links{
-        display:flex;
-        flex-wrap:wrap;
-        justify-content:center;
-        gap:15px;
+    display:flex;
+    gap:12px;
+    flex-wrap:wrap;
+    justify-content:flex-end;
     }
 
     .nav-links a{
@@ -723,7 +724,7 @@ body{
     .hero{
         flex-direction:column-reverse;
         text-align:center;
-        padding:120px 20px 60px;
+        padding:100px 20px 60px;
     }
 
     .hero-text{
